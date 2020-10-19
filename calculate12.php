@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	$conn = mysqli_connect('localhost:3306', 'root', 'root','finalelms');
+	$conn = mysqli_connect('localhost:3306', 'admin', 'kmit@3306','finalelms');
 	if (!$conn)
 	{
 		die('Could not connect: ' . mysql_error());

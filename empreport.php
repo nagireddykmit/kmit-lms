@@ -1,6 +1,6 @@
 <?php
 // employee data from DB
-$connect = mysqli_connect("localhost:3306", "root", "root", "finalelms");  
+$connect = mysqli_connect('localhost:3306', 'admin', 'kmit@3306','finalelms');  
  $query = "SELECT EmpId,FirstName,LastName,DepartmentShortName,Designation,doj,EmailId,Phonenumber,pancardno,adharno,jntu_uid,aicteid FROM tblemployees t, tbldepartments d where t.Department=d.DepartmentName and Status=1 order by Department,FirstName";  
  $result = mysqli_query($connect, $query); 
 

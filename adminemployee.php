@@ -1,5 +1,5 @@
 <?php   
- $connect = mysqli_connect("localhost:3306", "root", "root", "finalelms");  
+ $connect = mysqli_connect('localhost:3306', 'admin', 'kmit@3306','finalelms');  
  $query = "SELECT * FROM tblemployees";  
  $result = mysqli_query($connect, $query);  
  ?>  

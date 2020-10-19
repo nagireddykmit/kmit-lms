@@ -1,6 +1,6 @@
 <?php
 //fetch.php
-$connect = mysqli_connect("localhost:3306", "root", "root", "finalelms");
+$connect = mysqli_connect('localhost:3306', 'admin', 'kmit@3306','finalelms');
 $output = '';
 $result='';
 if(isset($_POST["query"]))

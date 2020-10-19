@@ -1,6 +1,6 @@
 <?php
 	error_reporting(1);
-	$connect = mysqli_connect("localhost:3306", "root", "root", "finalelms");
+	$connect = mysqli_connect('localhost:3306', 'admin', 'kmit@3306','finalelms');
 
 	$holiday=$_POST['holiday'];
 	$hdate=$_POST['date'];

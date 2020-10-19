@@ -2,7 +2,7 @@
 session_start();
 error_reporting(0);
 $lid=$_GET['leaveid'];
-$conn = mysqli_connect('localhost:3306', 'root', 'root','finalelms');
+$conn = mysqli_connect('localhost:3306', 'admin', 'kmit@3306','finalelms');
 $sql = "DELETE FROM tblleaves WHERE id=".$lid;
 if (mysqli_query($conn, $sql)) {
     echo "Record deleted successfully";
